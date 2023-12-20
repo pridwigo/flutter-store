@@ -42,7 +42,7 @@ class _HomeScreenState extends State<HomeScreen> {
 Widget buildPosts(List<Products> posts) {
   return GridView.builder(
     itemCount: posts.length,
-    gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
+    gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
     scrollDirection: Axis.vertical,
     itemBuilder: (context, index) {
       final post = posts[index];
